@@ -1,0 +1,43 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+*.egg
+dist/
+build/
+*.log
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.ropeproject/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Data files (optional – uncomment if you want to ignore data)
+# data/
+# *.csv
+# *.pkl
+# *.zip
+
+# Environment variables
+.env
+.env.local
