@@ -11,8 +11,8 @@ language-detection/
 │   ├── tokenizer_based/      # HF repos → model names
 ├── scripts/
 │   ├── download_dataset.py   # downloads the GlotLid dataset
-│   ├── obtain_bpc.py         # computes BPC for a given model
-│   ├── obtain_tok.py         # computes token counts for a tokenizer
+│   ├── obtain_bpc.py         # computes BPC for a given model (all langs)
+│   ├── obtain_tok.py         # computes token statistics for a given model (all langs)
 │   └── detect.py             # trains the classifier
 ├── src/                      
 ├── utils/                   
