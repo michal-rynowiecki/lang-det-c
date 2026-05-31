@@ -1,6 +1,3 @@
-Here is the corrected `README.md` content. Save it as a `.md` file and open it in any Markdown viewer (GitHub, VS Code, Typora, etc.) for proper rendering.
-
-```markdown
 # Language Detection
 
 This repository contains the code and data for training and evaluating language detection classifiers based on tokenizer metrics (BPC – bytes per character – and token counts). The project supports multiple tokenizer-based and language-length-based models, and includes scripts to reproduce all results reported in the paper.
