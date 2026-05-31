@@ -9,14 +9,13 @@ language-detection/
 ├── data/
 │   ├── lang_lengths/         # HF repos → model names
 │   ├── tokenizer_based/      # HF repos → model names
-│   └── ...                   # pre‑computed metrics (zipped)
 ├── scripts/
 │   ├── download_dataset.py   # downloads the GlotLid dataset
 │   ├── obtain_bpc.py         # computes BPC for a given model
 │   ├── obtain_tok.py         # computes token counts for a tokenizer
 │   └── detect.py             # trains the classifier
-├── src/                      # core modules (model, hyperparameter search)
-├── utils/                    # helper functions
+├── src/                      
+├── utils/                   
 └── requirements.txt
 ```
 
@@ -63,7 +62,7 @@ Computes bytes per character (BPC) for a given model.
 
 **Example:**
 ```bash
-python scripts/obtain_bpc.py --model_name "bert-base-uncased" --is_encoder True --languages en fr de
+python scripts/obtain_bpc.py -lm "google-bert/bert-base-uncased" --encoder
 ```
 
 ### `obtain_tok.py`
@@ -75,13 +74,13 @@ Computes token counts for a given tokenizer.
 
 **Example:**
 ```bash
-python scripts/obtain_tok.py -p "path/to/tokenizer"
+python scripts/obtain_tok.py -p "google-bert/bert-base-uncased"
 ```
 
 ## Training the Classifier
 
 Use `detect.py` to train the language detection classifier.  
-Training is very fast (approx. 30 seconds on the pre‑computed metrics). The repository does not include a pre‑trained classifier to encourage reproducibility.
+Training is quite fast.
 
 ```bash
 python scripts/detect.py [arguments]
