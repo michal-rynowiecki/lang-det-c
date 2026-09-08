@@ -1,0 +1,4 @@
+The following generative AI have been used in the project:
+
+Gemini
+the chatbot has been used for checking writing, parts of literature review and generating code for plotting and latex tables
